@@ -57,6 +57,10 @@ resource "aws_security_group" "allow_tls" {
 
 }
 
-output "MasterAgent_ec2_info" {
-  value = aws_instance.ec2.public_ip
+output "Master_ec2_info" {
+  value = aws_instance.Master.public_ip
+}
+
+output "Agent_ec2_info" {
+  value = aws_instance.Agent-1.public_ip
 }
