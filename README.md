@@ -27,4 +27,4 @@ aws-creds
 * Find Global Trusted Pipeline Libraries section
 * Name as jenkins-shared-library, default version main and load implicitly
 * Location is https://github.com/daws-82s/jenkins-shared-library.git
-Now Jenkins is ready to use.
+  Now Jenkins is ready to use.
