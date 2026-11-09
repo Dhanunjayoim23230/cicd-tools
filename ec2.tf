@@ -6,7 +6,7 @@ resource "aws_instance" "Master" {
     volume_size = 50 # Increase from 20 → 50
     volume_type = "gp3"
   }
-  user_data = file("cicd_Installs.sh")
+  user_data = file("master.sh")
 
   tags = {
     Name = "Control Plane"
@@ -21,7 +21,7 @@ resource "aws_instance" "Agent-1" {
     volume_size = 50 # Increase from 20 → 50
     volume_type = "gp3"
   }
-  user_data = file("docker.sh")
+  user_data = file("agent.sh")
 
   tags = {
     Name = "Control Plane"
